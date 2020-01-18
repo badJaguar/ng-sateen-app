@@ -16,5 +16,11 @@
     "skipServer": false,
     "skipUniversal": false,
     "webpack": true
+  },
+  "pwa": {
+    "serverModule": "src\\app\\app.server.module.ts",
+    "clientProject": "ng-sateen-app",
+    "skipInstall": false,
+    "directory": "."
   }
 }
