@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { FlexLayoutModule, BREAKPOINT } from '@angular/flex-layout';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
+import { HeaderComponent } from './header-part/header/header.component';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { HttpClientModule } from '@angular/common/http';
 
 const EXTRA_BREAKPOINTS = [{
   alias: 'xs.landscape',
@@ -20,6 +22,7 @@ const EXTRA_BREAKPOINTS = [{
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -32,8 +35,8 @@ const EXTRA_BREAKPOINTS = [{
       ssrObserveBreakpoints: ['xs', 'lt-md'],
       printWithBreakpoints: ['md', 'lt-lg', 'lt-xl', 'gt-sm', 'gt-xs']
     }),
-    FormsModule,
-    ReactiveFormsModule,
+    AngularSvgIconModule,
+    HttpClientModule,
   ],
   providers: [Title, CookieService,
     {
