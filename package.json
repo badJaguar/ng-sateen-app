@@ -39,7 +39,7 @@
     "@nguniversal/module-map-ngfactory-loader": "v8.2.6",
     "angular-svg-icon": "^8.0.0",
     "domino": "^2.1.3",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "ngx-cookie-service": "^2.3.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
